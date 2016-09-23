@@ -1,0 +1,16 @@
+<p><a href="/">Home</a></p>
+<p style="float:right;"><a href="/">logout</a></p>
+
+<h1>New Question</h1>
+
+
+<form ng-submit="create(newQuestion)">
+<label style="vertical-align: top; ">Question: <textarea ng-model ="quesion" rows="15" cols="28"></textarea></label>
+
+<label style="vertical-align: top; ">Description(optional) <textarea ng-model="description" rows="15" cols="28"></textarea>
+
+<div style=" display: block; margin-top: 10px;" >
+<button>Cancel</button><button>Submit</button>
+</div>
+</label>
+</form>

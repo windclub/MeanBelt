@@ -1,0 +1,25 @@
+	<div ng-controller="">
+	<p style="float:right;"><a href="/">logout</a></p>
+	<div ng-repeat="cats in users">
+	<h1>Hi {{}}</h1>
+	</div>
+	<label><a href="#/newqs">Add a Quesiton</a></label>
+	
+	<label>Search: <input type="text"></label>
+	</div>
+
+
+	<table>
+		<tr>
+		<th>Question</th>
+		<th>Answers</th>
+		<th>Action</th>
+		</tr>
+
+		<tr ng-repeat="cats in questions">
+			<td>{{}}</td>
+			<td>{{}}</td>
+			<td><button><a href="#/like"> Show</a></button></td>
+			<td><button><a href="#/answer">Answer</a></button></td>
+		</tr>
+	</table>
